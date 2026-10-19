@@ -12,22 +12,38 @@
     body { margin: 0; background: #f7f6f2; color: #202020; font-family: Arial, Helvetica, sans-serif; }
     main { max-width: 900px; margin: 0 auto; padding: 66px 24px 90px; }
     h1 { margin: 0 0 43px; font-size: clamp(2rem, 5.8vw, 4.25rem); font-weight: 700; letter-spacing: -.06em; line-height: 1; text-align: center; }
+    .subtitle { margin: -27px 0 35px; text-align: center; font-size: 0.92rem; letter-spacing: .19em; text-transform: lowercase; color: #666; }
     figure { margin: 0 auto; max-width: 720px; }
     figure img { display: block; width: 100%; height: auto; }
     .intro { max-width: 720px; margin: 39px auto 0; font-size: clamp(1.02rem, 1.85vw, 1.23rem); line-height: 1.65; }
     .intro p { margin: 0 0 1.2em; }
     .intro p:last-child { margin-bottom: 0; }
-    @media (max-width: 600px) { main { padding: 34px 18px 65px; } h1 { margin-bottom: 26px; } .intro { margin-top: 26px; line-height: 1.6; } }
+    .links { max-width: 720px; margin: 32px auto 0; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+    .links a { display: inline-flex; align-items: center; gap: 9px; color: inherit; text-decoration: none; font-size: .98rem; border-bottom: 1px solid transparent; padding-bottom: 3px; }
+    .links a:hover, .links a:focus-visible { border-color: currentColor; }
+    .links svg { width: 19px; height: 19px; flex-shrink: 0; }
+    @media (max-width: 600px) { main { padding: 34px 18px 65px; } h1 { margin-bottom: 15px; } .subtitle { margin: 0 0 25px; } .intro { margin-top: 26px; line-height: 1.6; } }
   </style>
 </head>
 <body>
   <main>
     <h1>VlaarWessels</h1>
+    <p class="subtitle">art &amp; animation</p>
     <figure><img src="vlaarwessels-portret.jpg" width="1086" height="1448" alt="Marcus Vlaar en Hans Wessels in met verf bespatte pakken voor een schilderij."></figure>
     <section class="intro" aria-label="Over VlaarWessels">
       <p>Marcus Vlaar en Hans Wessels werden boezemvrienden op de kunstacademie en verwierven cultstatus met hun subversieve animatieserie <em>Purno de Purno</em>, die generaties kijkers even verward als vrolijk achterliet. Purno de Purno werd van 1991 tot 2006 uitgezonden in VPRO's Villa Achterwerk.</p>
       <p>VlaarWessels verdienden hun sporen in allerlei creatieve sectoren: kunst, animatie, film, games. Inmiddels maken ze samen weer schilderijen en animaties, nog steeds met dezelfde zin voor spel, verwarring en ontregeling.</p>
     </section>
+    <nav class="links" aria-label="VlaarWessels links">
+      <a href="https://www.instagram.com/vlaarwessels/" target="_blank" rel="noopener noreferrer" aria-label="VlaarWessels op Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.purnodepurno.nl/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span>Purno de Purno</span>
+      </a>
+    </nav>
   </main>
 </body>
 </html>
